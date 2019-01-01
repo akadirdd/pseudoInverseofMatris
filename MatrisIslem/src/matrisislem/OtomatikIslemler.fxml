@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.83" prefHeight="750.0" prefWidth="1000.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="matrisislem.OtomatikIslemlerController">
+   <children>
+      <HBox prefHeight="750.0" prefWidth="1000.0">
+         <children>
+            <Pane prefHeight="750.0" prefWidth="500.0">
+               <children>
+                  <Label layoutX="55.0" layoutY="55.0" prefHeight="21.0" prefWidth="390.0" text="OLUŞAN MATRİS" textFill="#b50404">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font></Label>
+                  <TextArea fx:id="ilkmatris" layoutX="55.0" layoutY="102.0" prefHeight="225.0" prefWidth="390.0" />
+                  <Button fx:id="geri" layoutX="42.0" layoutY="687.0" mnemonicParsing="false" onAction="#onclick" text="GERİ" />
+                  <Button fx:id="randomButton" layoutX="316.0" layoutY="388.0" mnemonicParsing="false" onAction="#randomButtonHandler" text="Random" />
+               </children>
+            </Pane>
+            <Pane prefHeight="750.0" prefWidth="500.0">
+               <children>
+                  <Label layoutX="40.0" layoutY="49.0" prefHeight="25.0" prefWidth="193.0" text="GERÇEKLEŞEN İŞLEMLER" textFill="#b90505">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font></Label>
+                  <TextArea fx:id="islemler" layoutX="40.0" layoutY="99.0" prefHeight="610.0" prefWidth="420.0" promptText="İşlemler bekleniyor..." />
+               </children>
+            </Pane>
+         </children>
+      </HBox>
+   </children>
+</Pane>

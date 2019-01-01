@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.83" prefHeight="750.0" prefWidth="1000.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="matrisislem.AnasayfaController">
+   <children>
+      <VBox layoutX="325.0" layoutY="200.0" prefHeight="350.0" prefWidth="350.0">
+         <children>
+            <Label prefHeight="27.0" prefWidth="365.0" text="Uygulamayı nasıl kullanacağınızı seçiniz" textFill="#d00000">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="radioOto" mnemonicParsing="false" onAction="#handleradio" text="OTOMATİK" textFill="#1c00a8">
+               <VBox.margin>
+                  <Insets bottom="25.0" left="40.0" right="25.0" top="35.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="radioMan" mnemonicParsing="false" onAction="#handleradio" text="MANUEL" textFill="#00bc16">
+               <VBox.margin>
+                  <Insets bottom="25.0" left="40.0" right="25.0" top="25.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </RadioButton>
+            <Label fx:id="bilgi" prefHeight="36.0" prefWidth="350.0" textFill="#b0008b">
+               <font>
+                  <Font name="Corbel" size="15.0" />
+               </font>
+            </Label>
+            <Button fx:id="buttonBaslat" mnemonicParsing="false" onAction="#handleonClick" prefHeight="31.0" prefWidth="136.0" style="-fx-background-color: #a10500;" text="BAŞLAT" textFill="#f04107">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="50.0" left="150.0" right="50.0" top="40.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</Pane>
